@@ -2,6 +2,10 @@
 
 A clean, responsive quiz application built with React and pure CSS.
 
+## Live Demo
+
+[View the app live here!](https://quizapp-plum-mu.vercel.app)
+
 ## Features
 
 - Loads questions from local JSON
@@ -10,6 +14,10 @@ A clean, responsive quiz application built with React and pure CSS.
 - Results summary with correct/incorrect answers
 - Restart quiz functionality
 - Responsive and accessible
+- Timer per question (auto-advance)
+- Difficulty selector (easy/medium/hard)
+- Persistent high scores (localStorage)
+- Subtle animations and interactive UI
 
 ## Getting Started
 
@@ -22,12 +30,15 @@ A clean, responsive quiz application built with React and pure CSS.
    npm start
    ```
 
-## Design Decisions
+## Design Decisions & Architecture
 
-- **Local JSON** for easy demo and extension to API
-- **React Router** for clean navigation
-- **Pure CSS** for styling and responsiveness
-- **Functional components and hooks** for state management
+- **Component-based:** Each UI part is a separate React component for clarity and reusability.
+- **State management:** useState/useEffect for quiz flow, results, and timer.
+- **Routing:** React Router for navigation between start, quiz, and results.
+- **Styling:** Pure CSS with pastel colors for a modern, friendly look.
+- **Accessibility:** Keyboard navigation, ARIA labels, and focus states.
+- **Persistence:** High scores are stored in localStorage per difficulty.
+- **Bonus:** Timer, difficulty selector, subtle animations, and responsive design.
 
 ## To Deploy
 
